@@ -84,7 +84,7 @@ public class FramebufferObject : IDisposable
         GL.BindFramebuffer(FramebufferTarget.Framebuffer, handle);
     }
 
-    public void BindMsaa()
+    /*public void BindMsaa()
     {
         GL.BindFramebuffer(FramebufferTarget.ReadFramebuffer, _framebufferHandle);
         GL.BindFramebuffer(FramebufferTarget.DrawFramebuffer, _postProcessingHandle);
@@ -98,7 +98,7 @@ public class FramebufferObject : IDisposable
 
         GL.DrawArrays(PrimitiveType.Triangles, 0, Indices.Length);
         GL.Enable(EnableCap.DepthTest);
-    }
+    }*/
 
     public IntPtr GetPointer() => _postProcessingTexture.GetPointer();
 
