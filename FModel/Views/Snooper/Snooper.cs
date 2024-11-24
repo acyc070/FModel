@@ -128,7 +128,7 @@ public class Snooper : GameWindow
 
         Renderer.Render(); // render everything
 
-        Framebuffer.BindMsaa();
+        //Framebuffer.BindMsaa();
         Framebuffer.Bind(0); // switch to window background
 
         _gui.Render(this); // render UI
